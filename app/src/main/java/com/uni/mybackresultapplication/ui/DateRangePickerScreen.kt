@@ -4,29 +4,18 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.aspectRatio
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Close
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
-import androidx.compose.material3.Text
+import androidx.compose.material.Button
+import androidx.compose.material.ButtonDefaults
+import androidx.compose.material.Card
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -155,7 +144,7 @@ fun DateRangePickerScreen(
                     .fillMaxWidth()
                     .height(48.dp),
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = Color(0xFF4CAF50)
+                    backgroundColor = Color(0xFF4CAF50)
                 ),
                 shape = RoundedCornerShape(8.dp)
             ) {
@@ -216,7 +205,7 @@ fun DatePickerBottomSheet(
                 .align(Alignment.BottomCenter)
                 .padding(0.dp),
             shape = RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp),
-            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+            elevation = 8.dp
         ) {
             Column(
                 modifier = Modifier
@@ -403,7 +392,7 @@ fun DatePickerBottomSheet(
                         .fillMaxWidth()
                         .height(48.dp),
                     colors = ButtonDefaults.buttonColors(
-                        containerColor = Color(0xFF4CAF50)
+                        backgroundColor = Color(0xFF4CAF50)
                     ),
                     shape = RoundedCornerShape(8.dp)
                 ) {
